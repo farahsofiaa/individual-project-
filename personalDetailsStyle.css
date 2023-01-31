@@ -1,0 +1,90 @@
+body,html{
+	height: 100%;
+	margin: 0;
+	font-family: Arial, Helvetica;
+	background-color: black;
+}
+
+.content {
+	overflow: auto;
+	padding: 15% 5%;
+	text-align: left;
+}
+		
+body::-webkit-scrollbar {
+	width: 20px;
+}
+	
+body::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey;
+}
+	
+body::-webkit-scrollbar-thumb {
+	background: #AF9F8C;
+}
+	
+body::-webkit-scrollbar-thumb:hover {
+	background: #7F867B;
+}
+	
+.gallery {
+	display: flex;
+	padding: 2px;
+	transition: .3s;
+}
+	
+.gallery:hover .image:not(:hover){
+	filter: grayscale(1);
+}
+	
+.column {
+	display: flex;
+	flex-direction: column;
+	width: 45%;
+}
+	
+.gallery .thumb {
+	position: relative;
+}
+	
+.gallery .image {
+	display: block;
+	width: 100%;
+	transition: .3s;
+}
+
+.gallery .image:hover {
+	transform: scale(1.1);
+}
+
+table {
+border-collapse: collapse;
+width: 70%;
+}	
+
+td, th {
+border: 1px solid #dddddd;
+text-align: left;
+padding: 8px;
+background-color: white;
+}
+
+table.center {
+margin-left: auto; 
+margin-right: auto;
+}
+
+.skillbar-container {
+width: 100%;
+background-color: #E3E4E0;
+border-radius: 10px;
+}
+
+.skill-level {
+text-align: right;
+padding: 5px 5px;
+color: white;
+background-color: #AF9F8C;
+border-radius: 10px;
+margin-bottom: 10px;
+}
